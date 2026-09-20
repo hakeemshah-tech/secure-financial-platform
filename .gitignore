@@ -1,0 +1,112 @@
+# =============================================================================
+# Root .gitignore: applies recursively to every workspace.
+# Patterns without a leading slash match at any depth, so `.env` also covers
+# `sft-client/.env`, `sft-server/.env`, and anything added later.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Secrets and credentials - NEVER COMMIT
+# -----------------------------------------------------------------------------
+.env
+.env.*
+*.env
+!.env.example
+
+# Key material, certificates, service-account exports
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.keystore
+*.jks
+id_rsa
+id_rsa.*
+*serviceAccount*.json
+*service-account*.json
+*firebase-adminsdk*.json
+secrets/
+.secrets/
+
+# Wallet / keystore material
+wallet.json
+keystore/
+*.wallet
+
+# -----------------------------------------------------------------------------
+# Dependencies
+# -----------------------------------------------------------------------------
+node_modules/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+jspm_packages/
+
+# -----------------------------------------------------------------------------
+# Build output
+# -----------------------------------------------------------------------------
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+
+# -----------------------------------------------------------------------------
+# IDE / editor configuration
+# -----------------------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+.fleet/
+*.iml
+*.swp
+*.swo
+*~
+.history/
+
+# -----------------------------------------------------------------------------
+# Logs and crash/debug artifacts
+# -----------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+error.txt
+error*.txt
+*.heapsnapshot
+report.*.json
+
+# -----------------------------------------------------------------------------
+# Test / coverage
+# -----------------------------------------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+
+# -----------------------------------------------------------------------------
+# Caches
+# -----------------------------------------------------------------------------
+.cache/
+.eslintcache
+.parcel-cache/
+.temp/
+tmp/
+
+# -----------------------------------------------------------------------------
+# OS noise
+# -----------------------------------------------------------------------------
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/

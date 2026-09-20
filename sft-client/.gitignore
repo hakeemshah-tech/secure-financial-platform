@@ -1,0 +1,80 @@
+# =====================================
+# Dependencies
+# =====================================
+node_modules/
+
+# =====================================
+# Next.js / React build output
+# =====================================
+.next/
+out/
+dist/
+build/
+
+# =====================================
+# Environment variables (DO NOT COMMIT)
+# =====================================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.*.local
+
+# =====================================
+# Logs
+# =====================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# =====================================
+# Cache folders
+# =====================================
+.cache/
+.eslintcache
+.next/cache/
+
+# =====================================
+# TypeScript
+# =====================================
+*.tsbuildinfo
+
+# =====================================
+# Coverage / Testing
+# =====================================
+coverage/
+
+# =====================================
+# OS generated files
+# =====================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =====================================
+# IDE / Editor settings
+# =====================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =====================================
+# Package manager files (optional)
+# Ignore if not using them
+# =====================================
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+
+# =====================================
+# Misc
+# =====================================
+*.pem
+*.key
+*.crt
+*.env.backup
